@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./cadastrar.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400&display=swap" rel="stylesheet">
+  <title>Cadastro</title>
+</head>
+<body>
+
+  <div class="query2">
+    <div class="query2-container">
+
+      <div class="logo-circle">
+        <img class="logo-img" src="screenshot-20250402-at-084320-pi-2-figma-removebg-preview-2.png" alt="Logo">
+      </div>
+
+      <h2 class="para-se-cadastrar">Para se cadastrar</h2>
+      <p class="escolha-uma-das">Escolha uma das 3 opções abaixo</p>
+
+      <button class="button" id="profissionalText">Profissional</button>
+      <button class="button" id="rectangle2">Empresário</button>
+      <button class="button" id="rectangle3">Saúde</button>
+
+      <a class="voltar-ao-nicio" id="voltarAoNicio">Voltar ao Início</a>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("rectangle2").addEventListener("click", () => {
+      alert("Você escolheu Empresário");
+    });
+
+    document.getElementById("rectangle3").addEventListener("click", () => {
+      alert("Você escolheu Saúde");
+    });
+
+    document.getElementById("profissionalText").addEventListener("click", () => {
+      alert("Você escolheu Profissional");
+    });
+
+    document.getElementById("voltarAoNicio").addEventListener("click", () => {
+      window.location.href = "index.html"; // Ajuste conforme necessário
+    });
+  </script>
+
+</body>
+</html>
