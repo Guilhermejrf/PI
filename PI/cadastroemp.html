@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cadastro Empresarial</title>
+  <link rel="stylesheet" href="cadastroemp.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="cadastro-empresarial">
+    <div class="cadastro-container">
+
+      <!-- Painel esquerdo -->
+      <div class="side-panel">
+        <div class="logo-circle">
+          <img src="screenshot-20250402-at-084320-pi-2-figma-removebg-preview-2.png" alt="Logo" class="logo-img" />
+        </div>
+        <h2 class="bem-vindo">Bem vindo!</h2>
+        <p class="insira-seu-email">Insira seu email e crie sua senha</p>
+        <button class="btn-outline" id="voltarBtn">Voltar</button>
+      </div>
+
+      <!-- Formulário -->
+      <div class="form-panel">
+        <h1 class="cadastro-title">Cadastro empresarial</h1>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Digite seu email" />
+        </div>
+
+        <div class="form-group">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" placeholder="Digite sua senha" />
+        </div>
+
+        <div class="form-group">
+          <label for="cnpj">CNPJ</label>
+          <input type="text" id="cnpj" placeholder="Digite seu CNPJ" />
+        </div>
+
+        <button class="btn-primary" id="cadastrarBtn">Cadastrar</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("voltarBtn").addEventListener("click", () => {
+      window.history.back();
+    });
+
+    document.getElementById("cadastrarBtn").addEventListener("click", () => {
+      const email = document.getElementById("email").value;
+      const senha = document.getElementById("senha").value;
+      const cnpj = document.getElementById("cnpj").value;
+
+      if (email && senha && cnpj) {
+        alert(`Cadastro realizado com sucesso!\nEmail: ${email}\nCNPJ: ${cnpj}`);
+      } else {
+        alert("Preencha todos os campos corretamente.");
+      }
+    });
+  </script>
+</body>
+</html>
