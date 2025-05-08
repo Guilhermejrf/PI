@@ -1,0 +1,578 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.area-saude {
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1A3774;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: opacity 0.3s ease;
+}
+
+.nav a:hover {
+    opacity: 0.8;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+}
+
+.profile img {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+}
+
+.profile span {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Conteúdo principal */
+.main-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+/* Estilos existentes */
+.lista-de-ortopedistas-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #fff;
+    width: 1600px;
+    height: 914px;
+}
+
+.lista-de-ortopedistas-item {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #1a3774;
+    width: 1600px;
+    height: 93px;
+}
+
+.group-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 30px;
+    background-color: #fff;
+    width: 195px;
+    height: 64px;
+}
+
+.image-133-icon {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    width: 63px;
+    height: 63px;
+    object-fit: cover;
+    opacity: 0.31;
+}
+
+.rectangle-parent {
+    position: absolute;
+    top: 15px;
+    left: 1384px;
+    width: 195px;
+    height: 64px;
+}
+
+.screenshot-2025-04-02-at-08-43-icon {
+    position: absolute;
+    top: 13px;
+    left: 28px;
+    width: 76.6px;
+    height: 67px;
+    object-fit: cover;
+}
+
+.ver-seu-perfil {
+    position: absolute;
+    top: 36px;
+    left: 1452px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #a6a6a6;
+    text-align: center;
+    display: inline-block;
+    width: 99px;
+    height: 24px;
+}
+
+.lista-de-ortopedistas-inner,
+.rectangle-div,
+.lista-de-ortopedistas-child1,
+.lista-de-ortopedistas-child2,
+.lista-de-ortopedistas-child3,
+.lista-de-ortopedistas-child4,
+.lista-de-ortopedistas-child5,
+.lista-de-ortopedistas-child6 {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #1a3774;
+    box-sizing: border-box;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: top;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.lista-de-ortopedistas {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.b35bfe46-d2ae-41b8-8176-cf925d-icon,
+.f944352b-a920-4351-ad43-6cdc15-icon,
+.db93437-e474-4372-af09-cdf4ce6-icon,
+.ba5ee2-e1df-46e1-9bdb-0e851ebf-icon,
+.b6511f0b-1b2b-4ce4-8415-edb7d9-icon,
+.d56ad7-b6b8-4b50-99a5-59839923-icon,
+.a56cdcf-b520-49d1-a0bc-c360968-icon,
+.b026531b-95d3-43b3-ae4b-6470fc-icon {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.laura-icon,
+.angelica-icon,
+.janaina-icon,
+.julio-icon,
+.fernanda-icon,
+.marcos-icon,
+.alberto-icon,
+.marcio-icon {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 8px 8px 0 0;
+}
+
+.dra-laura-monteiro,
+.dra-angelica-moura,
+.dra-janaina-otvio,
+.dr-julio-ferreira,
+.dra-fernanda-medeiros,
+.dr-marcos-peixoto,
+.dr-alberto-lima,
+.dr-marcio-vieira {
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.ortopedista,
+.ortopedista1,
+.ortopedista2,
+.ortopedista3,
+.ortopedista4,
+.ortopedista5,
+.ortopedista6,
+.ortopedista7 {
+    position: relative;
+    line-height: 24px;
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
+    color: #666;
+}
+
+.pe-olinda,
+.pe-recife,
+.rn-natal,
+.pe-olinda1,
+.mg-belo-horizonte,
+.pe-olinda2,
+.sp-guarulhos,
+.pb-campina-grande {
+    position: relative;
+    line-height: 24px;
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
+    color: #666;
+}
+
+.lista-de-ortopedistas-child7,
+.lista-de-ortopedistas-child8,
+.lista-de-ortopedistas-child9,
+.lista-de-ortopedistas-child10,
+.lista-de-ortopedistas-child11,
+.lista-de-ortopedistas-child12,
+.lista-de-ortopedistas-child13,
+.lista-de-ortopedistas-child14 {
+    position: relative;
+    background-color: #1a3774;
+    width: 100%;
+    height: 40px;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 8px 8px;
+}
+
+.entre-em-contato,
+.entre-em-contato1,
+.entre-em-contato2,
+.entre-em-contato3,
+.entre-em-contato4,
+.entre-em-contato5,
+.entre-em-contato6,
+.entre-em-contato7 {
+    position: relative;
+    line-height: 24px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.entre-em-contato:hover,
+.entre-em-contato1:hover,
+.entre-em-contato2:hover,
+.entre-em-contato3:hover,
+.entre-em-contato4:hover,
+.entre-em-contato5:hover,
+.entre-em-contato6:hover,
+.entre-em-contato7:hover {
+    opacity: 0.8;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .lista-de-ortopedistas-inner,
+    .rectangle-div,
+    .lista-de-ortopedistas-child1,
+    .lista-de-ortopedistas-child2,
+    .lista-de-ortopedistas-child3,
+    .lista-de-ortopedistas-child4,
+    .lista-de-ortopedistas-child5,
+    .lista-de-ortopedistas-child6 {
+        width: calc(50% - 40px);
+        margin: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lista-de-ortopedistas-inner,
+    .rectangle-div,
+    .lista-de-ortopedistas-child1,
+    .lista-de-ortopedistas-child2,
+    .lista-de-ortopedistas-child3,
+    .lista-de-ortopedistas-child4,
+    .lista-de-ortopedistas-child5,
+    .lista-de-ortopedistas-child6 {
+        width: calc(100% - 40px);
+        margin: 20px;
+    }
+}
+
+.icon {
+    position: absolute;
+    top: 452px;
+    left: 247px;
+    width: 17px;
+    height: 17px;
+    object-fit: cover;
+}
+
+.icon1 {
+    position: absolute;
+    top: 720px;
+    left: 556px;
+    width: 17px;
+    height: 17px;
+    object-fit: cover;
+}
+
+.icon2 {
+    position: absolute;
+    top: 723px;
+    left: 866px;
+    width: 17px;
+    height: 17px;
+    object-fit: cover;
+}
+
+.icon3 {
+    position: absolute;
+    top: 723px;
+    left: 1177px;
+    width: 17px;
+    height: 17px;
+    object-fit: cover;
+}
+
+.icon4 {
+    position: absolute;
+    top: 451px;
+    left: 556px;
+    width: 17px;
+    height: 17px;
+    object-fit: cover;
+}
+
+.icon5 {
+    position: absolute;
+    top: 721px;
+    left: 247px;
+    width: 17px;
+    height: 17px;
+    object-fit: cover;
+}
+
+.icon6 {
+    position: absolute;
+    top: 455px;
+    left: 865px;
+    width: 17px;
+    height: 17px;
+    object-fit: cover;
+}
+
+.icon7 {
+    position: absolute;
+    top: 451px;
+    left: 1179px;
+    width: 17px;
+    height: 17px;
+    object-fit: cover;
+}
+
+.icon8 {
+    position: absolute;
+    top: 431px;
+    left: 247px;
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+}
+
+.icon9 {
+    position: absolute;
+    top: 699px;
+    left: 556px;
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+}
+
+.icon10 {
+    position: absolute;
+    top: 702px;
+    left: 866px;
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+}
+
+.icon11 {
+    position: absolute;
+    top: 702px;
+    left: 1177px;
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+}
+
+.icon12 {
+    position: absolute;
+    top: 430px;
+    left: 556px;
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+}
+
+.icon13 {
+    position: absolute;
+    top: 700px;
+    left: 247px;
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+}
+
+.icon14 {
+    position: absolute;
+    top: 434px;
+    left: 865px;
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+}
+
+.icon15 {
+    position: absolute;
+    top: 430px;
+    left: 1179px;
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+}
+
+.ortopedista8 {
+    position: absolute;
+    top: 154px;
+    left: 98px;
+    font-size: 40px;
+    line-height: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.chevron-up-icon {
+    position: absolute;
+    top: 141px;
+    left: 28px;
+    width: 49.1px;
+    height: 49.1px;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.lista-de-ortopedistas {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1600px;
+    height: 914px;
+    text-align: left;
+    font-size: 10px;
+    color: #000;
+}
+
+.inicio {
+    position: absolute;
+    top: 445px;
+    left: 493px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 59px;
+    height: 24px;
+}
+
+.reagendamento {
+    position: absolute;
+    top: 445px;
+    left: 552px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 155px;
+    height: 24px;
+}
+
+.historico {
+    position: absolute;
+    top: 445px;
+    left: 723px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 102px;
+    height: 24px;
+}
+
+.cancelar {
+    position: absolute;
+    top: 445px;
+    left: 851px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 113px;
+    height: 24px;
+}
+
+.avaliaes {
+    position: absolute;
+    top: 445px;
+    left: 975px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 132px;
+}
+
+.ortopedistas {
+    width: 100%;
+    position: relative;
+    height: 914px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    font-family: Roboto;
+}

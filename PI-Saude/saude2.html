@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/saude2.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <title>Chat - Área Saúde</title>
+</head>
+<body>
+    <div class="area-saude">
+        <header class="header">
+            <div class="logo">
+                <img src="./assets/img/s4.png" alt="Logo" />
+            </div>
+            <nav class="nav">
+                <a href="#">Início</a>
+                <a href="#">Mensagens</a>
+                <a href="#">Achar Vagas</a>
+                <a href="#">Avaliações de Empresas</a>
+                <a href="#">Empresa</a>
+            </nav>
+            <div class="profile">
+                <img src="./assets/img/s3.png" alt="Perfil" />
+                <span>Ver seu perfil</span>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <div class="chat-header-content">
+                        <div class="chat-header-info">
+                            <h1>Chat com Dra. Laura Monteiro</h1>
+                            <p class="specialty">Ortopedista</p>
+                        </div>
+                        <a href="saude3.html" class="video-call-button">
+                            <i class="fas fa-video"></i>
+                            Videochamada
+                        </a>
+                    </div>
+                </div>
+
+                <div class="chat-messages">
+                    <div class="message doctor">
+                        <div class="message-content">
+                            <p>Olá! Como posso ajudar você hoje?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input">
+                    <textarea placeholder="Digite sua mensagem..."></textarea>
+                    <button class="send-button">Enviar</button>
+                </div>
+            </div>
+
+            <div class="avalia-dores-nas-container">
+                <h2>Especialidades</h2>
+                <ul class="avalia-dores-nas-costas-joelh">
+                    <li class="avalia-dores-nas">Avalia dores nas costas, joelhos, ombros, tornozelos, etc.</li>
+                    <li class="avalia-dores-nas">Examina posturas, movimentos e faz testes físicos.</li>
+                    <li class="avalia-dores-nas">Indica fisioterapia, imobilizações, medicamentos anti-inflamatórios, infiltrações e reabilitação muscular.</li>
+                    <li class="avalia-dores-nas">Reconstrução de ligamentos</li>
+                    <li class="avalia-dores-nas">Colocação de próteses de joelho ou quadril</li>
+                    <li class="avalia-dores-nas">Reparos de fraturas graves</li>
+                </ul>
+                <a href="saude1.html" class="contact-button">Entrar em contato</a>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sendButton = document.querySelector('.send-button');
+            const textarea = document.querySelector('textarea');
+
+            if(sendButton && textarea) {
+                sendButton.addEventListener('click', function() {
+                    const message = textarea.value.trim();
+                    if(message) {
+                        // Adicionar mensagem do usuário
+                        const userMessage = document.createElement('div');
+                        userMessage.className = 'message user';
+                        userMessage.innerHTML = `
+                            <div class="message-content">
+                                <p>${message}</p>
+                            </div>
+                        `;
+                        document.querySelector('.chat-messages').appendChild(userMessage);
+
+                        // Limpar textarea
+                        textarea.value = '';
+
+                        // Simular resposta do médico
+                        setTimeout(() => {
+                            const doctorMessage = document.createElement('div');
+                            doctorMessage.className = 'message doctor';
+                            doctorMessage.innerHTML = `
+                                <div class="message-content">
+                                    <p>Entendi sua dúvida. Vou analisar e retornar em breve.</p>
+                                </div>
+                            `;
+                            document.querySelector('.chat-messages').appendChild(doctorMessage);
+                        }, 1000);
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
