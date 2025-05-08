@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/saude1.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <title>Área Saúde</title>
+</head>
+<body>
+    <div class="area-saude">
+        <header class="header">
+            <div class="logo">
+                <img src="./assets/img/s4.png" alt="Logo" />
+            </div>
+            <nav class="nav">
+                <a href="#">Início</a>
+                <a href="#">Mensagens</a>
+                <a href="#">Achar Vagas</a>
+                <a href="#">Avaliações de Empresas</a>
+                <a href="#">Empresa</a>
+            </nav>
+            <div class="profile">
+                <img src="./assets/img/s3.png" alt="Perfil" />
+                <span>Ver seu perfil</span>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="doctor-profile">
+                <div class="doctor-image">
+                    <img class="doctor-photo" alt="Dra. Laura Monteiro" src="/assets/img/s1.png">
+                </div>
+                <div class="doctor-info">
+                    <h1 class="doctor-name">Dra. Laura Monteiro</h1>
+                    <p class="doctor-specialty">Ortopedista</p>
+                    <div class="action-buttons">
+                        <a href="saude2.html" class="btn btn-chat">Chat</a>
+                        <button class="btn btn-consult">Marcar Consulta</button>
+                        <button class="btn btn-evaluation">Avaliação médica</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="doctor-details">
+                <div class="quote-section">
+                    <blockquote class="doctor-quote">
+                        "Mais do que alinhar ossos, minha missão é devolver movimento, confiança e qualidade de vida a cada passo do paciente."
+                        <cite>— Dra. Laura Monteiro</cite>
+                    </blockquote>
+                </div>
+
+                <div class="info-sections">
+                    <section class="info-section">
+                        <h2 class="section-title">Especialidades</h2>
+                        <div class="section-content">
+                            <img class="section-icon" alt="Especialidades" src="/assets/img/s2.png" onclick="toggleContent(this)">
+                            <div class="section-details">
+                                <ul class="specialties-list">
+                                    <li>Avalia dores nas costas, joelhos, ombros, tornozelos, etc.</li>
+                                    <li>Examina posturas, movimentos e faz testes físicos.</li>
+                                    <li>Indica fisioterapia, imobilizações, medicamentos anti-inflamatórios, infiltrações e reabilitação muscular.</li>
+                                    <li>Reconstrução de ligamentos</li>
+                                    <li>Colocação de próteses de joelho ou quadril</li>
+                                    <li>Reparos de fraturas graves</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="info-section">
+                        <h2 class="section-title">Resumo do currículo</h2>
+                        <div class="section-content">
+                            <img class="section-icon" alt="Currículo" src="/assets/img/s2.png" onclick="toggleContent(this)">
+                            <div class="section-details">
+                                <ul class="specialties-list">
+                                    <li>Avalia dores nas costas, joelhos, ombros, tornozelos, etc.</li>
+                                    <li>Examina posturas, movimentos e faz testes físicos.</li>
+                                    <li>Indica fisioterapia, imobilizações, medicamentos anti-inflamatórios, infiltrações e reabilitação muscular.</li>
+                                    <li>Reconstrução de ligamentos</li>
+                                    <li>Colocação de próteses de joelho ou quadril</li>
+                                    <li>Reparos de fraturas graves</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="info-section">
+                        <h2 class="section-title">Avaliações</h2>
+                        <div class="section-content">
+                            <img class="section-icon" alt="Avaliações" src="/assets/img/s2.png" onclick="toggleContent(this)">
+                            <div class="section-details">
+                                <ul class="specialties-list">
+                                    <li>Avalia dores nas costas, joelhos, ombros, tornozelos, etc.</li>
+                                    <li>Examina posturas, movimentos e faz testes físicos.</li>
+                                    <li>Indica fisioterapia, imobilizações, medicamentos anti-inflamatórios, infiltrações e reabilitação muscular.</li>
+                                    <li>Reconstrução de ligamentos</li>
+                                    <li>Colocação de próteses de joelho ou quadril</li>
+                                    <li>Reparos de fraturas graves</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const consultButton = document.querySelector('.btn-consult');
+            if(consultButton) {
+                consultButton.addEventListener('click', function() {
+                    // Adicione aqui a lógica da consulta
+                });
+            }
+        });
+
+        function toggleContent(imgElement) {
+            const sectionDetails = imgElement.nextElementSibling;
+            const isVisible = sectionDetails.style.display === 'block';
+            
+            // Fecha todos os outros slots
+            document.querySelectorAll('.section-details').forEach(detail => {
+                detail.style.display = 'none';
+            });
+            
+            // Abre/fecha o slot clicado
+            sectionDetails.style.display = isVisible ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

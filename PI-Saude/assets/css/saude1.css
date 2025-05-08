@@ -1,0 +1,281 @@
+/* Reset e estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Container principal */
+.area-saude {
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1A3774;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: opacity 0.3s ease;
+}
+
+.nav a:hover {
+    opacity: 0.8;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+}
+
+.profile img {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+}
+
+.profile span {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Conteúdo principal */
+.main-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+/* Perfil do médico */
+.doctor-profile {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.doctor-image {
+    width: 100%;
+    max-width: 400px;
+}
+
+.doctor-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.doctor-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.doctor-name {
+    font-size: 2rem;
+    color: #1a3774;
+}
+
+.doctor-specialty {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Botões de ação */
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-chat {
+    background-color: #1a3774;
+    color: white;
+}
+
+.btn-consult {
+    background-color: #1a3774;
+    color: white;
+}
+
+.btn-evaluation {
+    background-color: transparent;
+    border: 1px solid #666;
+    color: #666;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Seção de citação */
+.quote-section {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.doctor-quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #333;
+}
+
+.doctor-quote cite {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 300;
+}
+
+/* Seções de informação */
+.info-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.info-section {
+    background-color: #f5f5f5;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.section-title {
+    color: #1a3774;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.section-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.section-icon:hover {
+    transform: scale(1.1);
+}
+
+.section-details {
+    display: none;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.specialties-list {
+    list-style: none;
+    padding: 0;
+}
+
+.specialties-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+    color: #666;
+}
+
+.specialties-list li:last-child {
+    border-bottom: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .doctor-profile {
+        grid-template-columns: 1fr;
+    }
+
+    .doctor-image {
+        max-width: 100%;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .main-content {
+        padding: 1rem;
+    }
+
+    .info-sections {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .doctor-name {
+        font-size: 1.5rem;
+    }
+}
